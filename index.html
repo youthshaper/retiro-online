@@ -44,24 +44,18 @@ header{background:linear-gradient(135deg,#17324d,#2c5d78);color:#fff;padding:30p
 </div>
 <div class="notice" id="pensionHelp" style="margin:16px 0"><span id="pensionHelpText"><strong>Estimating your pension:</strong> If you are an SSS member, you can use the official <a href="https://member.sss.gov.ph/member/pbl/pencalc/views/index.jsp" target="_blank" rel="noopener">My.SSS Pension Calculator</a>, then enter the estimated monthly pension above. For GSIS, use your latest official GSIS estimate/benefit information. Retiro uses the amount you enter; it does not independently calculate your pension.</span></div>
 <hr style="border:0;border-top:1px solid var(--line);margin:22px 0">
-<h2>2. Set Your Retirement Goals</h2><p class="sub">Retiro evaluates a range of retirement ages and contribution levels to search for feasible retirement pathways. The two goals below drive the pathway search.</p>
-<div class="grid">
-<div class="field"><label>20. Desired retirement corpus (₱)</label><input id="targetCorpus" type="text" inputmode="decimal" value="20,000,000"><small>Accumulated funds for retirement</small></div>
-<div class="field"><label>21. Desired financial legacy (₱)</label><input id="targetLegacy" type="text" inputmode="decimal" value="6,000,000"><small>Remaining assets at end-of-life</small></div>
-<div class="field"><label>22. Maximum contribution as % of annual savings</label><input id="maxContrib" type="text" inputmode="decimal" data-percent="true" step="0.05" value="80%"><small>Used as a feasibility ceiling in Retiro pathway search.</small></div>
-</div>
 <div class="actions" style="margin-top:18px"><button class="btn primary" onclick="calculate()">Build My Retirement Blueprint</button><button class="btn secondary" onclick="loadIllustration()">Reset to Illustration</button></div>
 <div id="msg" class="notice hidden" style="margin-top:14px"></div>
 </section>
 
 <section class="card hidden" id="scenario">
-<h2>3. Your Current Retirement Scenario</h2><p class="sub">Before looking at targets and pathways, see what your current assumptions project at your desired retirement age.</p>
+<h2>2. Your Current Retirement Scenario</h2><p class="sub">Before looking at targets and pathways, see what your current assumptions project at your desired retirement age.</p>
 <div id="scenarioStats" class="stats"></div>
 <div id="scenarioNote" class="notice" style="margin-top:14px"></div>
 </section>
 
 <section class="card hidden" id="readiness">
-<h2>4. Your Financial Readiness</h2><p class="sub">This parameter describes the strength of your current financial retirement plan. This is a planning indicator only, not a prediction, financial advice, or a measure of your overall financial health.</p>
+<h2>3. Your Financial Readiness</h2><p class="sub">This parameter describes the strength of your current financial retirement plan. This is a planning indicator only, not a prediction, financial advice, or a measure of your overall financial health.</p>
 <div class="two">
 <div>
 <div id="readinessStats" class="stats"></div>
@@ -76,7 +70,14 @@ header{background:linear-gradient(135deg,#17324d,#2c5d78);color:#fff;padding:30p
 </section>
 
 <section class="card hidden" id="results">
-<h2>5. Your Retiro Options</h2><p class="sub">Retiro searches feasible options within the explored retirement-age range of <strong>60 to 70</strong>. This is an analysis range—not a recommendation to retire later than your preferred age. An option is considered feasible only when the applicable conditions you have set are satisfied.</p>
+<h2>4. Retirement Optimizer: Set Your Goals</h2><p class="sub">Retiro evaluates a range of retirement ages and contribution levels to search for feasible retirement pathways. The goals below drive the pathway search.</p>
+<div class="grid">
+<div class="field"><label>Desired retirement corpus (₱)</label><input id="targetCorpus" type="text" inputmode="decimal" value="20,000,000"><small>Accumulated funds for retirement</small></div>
+<div class="field"><label>Desired financial legacy (₱)</label><input id="targetLegacy" type="text" inputmode="decimal" value="6,000,000"><small>Remaining assets at end-of-life</small></div>
+<div class="field"><label>Maximum contribution as % of annual savings</label><input id="maxContrib" type="text" inputmode="decimal" data-percent="true" step="0.05" value="80%"><small>Used as a feasibility ceiling in Retiro pathway search.</small></div>
+</div>
+<br>
+<h2>Your Retiro Options</h2><p class="sub">Retiro searches feasible options within the explored retirement-age range of <strong>60 to 70</strong>. This is an analysis range—not a recommendation to retire later than your preferred age. An option is considered feasible only when the applicable conditions you have set are satisfied.</p>
 <div id="pathways" class="pathways"></div>
 </section>
 
