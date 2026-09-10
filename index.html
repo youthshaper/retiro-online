@@ -270,7 +270,7 @@ function calculate(shouldScroll=true){
   selectedPath=best.Minimum?'Minimum':'Balanced';
   document.getElementById('ageSlider').value=selectedAge; document.getElementById('ageBox').value=selectedAge;
   refreshExplorer();
-  showMsg('When your blueprint is calculated, review your current scenario and readiness first, then explore the feasible pathways.','');
+  showMsg('When your blueprint is calculated, review your current scenario and readiness first. You can always change your assumptions to create new scenarios, then explore the feasible pathways with Retiro Optimizer.','');
   if(shouldScroll) document.getElementById('scenario').scrollIntoView({behavior:'smooth'});
 }
 
