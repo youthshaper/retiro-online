@@ -289,8 +289,8 @@ function renderScenario(proj){
      <div class="stat"><span>Age at fund depletion</span><strong>${proj.depletionAge===null?'Not depleted':proj.depletionAge}</strong></div>`;
   const gap=Math.max(0,proj.totalExpenses-proj.preCorpus-proj.totalInterest-proj.totalPension);
   document.getElementById('scenarioNote').innerHTML=
-    `<strong>What this means:</strong> At retirement age ${base.retAge}, current assumptions produce ${money(proj.corpus)} in retirement resources, and total pension income of ${money(proj.totalPension)}for the entire projected lifespan. Under the assumed retirement lifestyle, with a projected cost of ${money(proj.totalExpenses)},   
-     the remaining assets at end-of-life is ${money(proj.legacy)}. ${proj.depletionAge===null?'The retirement resources are not depleted within the projected lifespan.':`The retirement resources are expected to hit zero balance at age ${proj.depletionAge}.`}`;
+    `<strong>What this means:</strong> At retirement age ${base.retAge}, current assumptions produce ${money(proj.corpus)} in retirement resources, and total pension income of ${money(proj.totalPension)} for the entire projected lifespan. Under the assumed retirement lifestyle, with a projected cost of ${money(proj.totalExpenses)},   
+     the remaining assets at end-of-life is ${money(proj.legacy)}. ${proj.depletionAge===null?'The retirement resources are not depleted within the projected lifespan.':`The retirement funds, including interest income, are expected to hit zero balance at age ${proj.depletionAge}.`}`;
   document.getElementById('scenario').classList.remove('hidden');
 }
 
