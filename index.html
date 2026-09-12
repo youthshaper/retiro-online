@@ -282,11 +282,11 @@ function calculate(shouldScroll=true){
 
 function renderScenario(proj){
   document.getElementById('scenarioStats').innerHTML=
-    `<div class="stat"><span>Projected retirement fund/corpus</span><strong>${money(proj.corpus)}</strong></div>
-     <div class="stat"><span>Total retirement expenses</span><strong>${money(proj.totalExpenses)}</strong></div>
-     <div class="stat"><span>Total pension income</span><strong>${money(proj.totalPension)}</strong></div>
-     <div class="stat"><span>Financial legacy</span><strong>${money(proj.legacy)}</strong></div>
-     <div class="stat"><span>Fund is projected to be depleted at age</span><strong>${proj.depletionAge===null?'Not depleted':proj.depletionAge}</strong></div>`;
+    `<div class="stat"><span>Projected retirement fund or corpus</span><strong>${money(proj.corpus)}</strong></div>
+     <div class="stat"><span>Projected retirement expenses until terminal age</span><strong>${money(proj.totalExpenses)}</strong></div>
+     <div class="stat"><span>Total pension income until terminal age</span><strong>${money(proj.totalPension)}</strong></div>
+     <div class="stat"><span>Projected financial legacy</span><strong>${money(proj.legacy)}</strong></div>
+     <div class="stat"><span>All funds, including interest income, are projected to be depleted at age</span><strong>${proj.depletionAge===null?'Not depleted':proj.depletionAge}</strong></div>`;
   const gap=Math.max(0,proj.totalExpenses-proj.preCorpus-proj.totalInterest-proj.totalPension);
   document.getElementById('scenarioNote').innerHTML=
     `<strong>What this means:</strong> At retirement age ${base.retAge}, your current assumptions produce ${money(proj.corpus)} in retirement resources and total pension income amounting to ${money(proj.totalPension)}. Under the assumed retirement lifestyle with a projected cost of ${money(proj.totalExpenses)},   
