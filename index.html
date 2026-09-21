@@ -3,22 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Retiro Online — Seminar Edition</title>
+<title>Retiro Online — Seminar Edition · Readiness Profile v1.2</title>
 <style>
 :root{--ink:#17324d;--muted:#66788a;--line:#dce5ec;--bg:#f5f8fb;--card:#fff;--green:#2e8b57;--blue:#3578c4;--purple:#7651b5;--gold:#d39b27;--danger:#b94747}
 *{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-header{background:linear-gradient(135deg,#17324d,#2c5d78);color:#fff;padding:30px 20px}header .wrap{max-width:1100px;margin:auto}h1{margin:0 0 6px;font-size:34px;letter-spacing:.2px}header p{margin:0;color:#dcecf7;font-size:16px}.wrap{max-width:1100px;margin:auto;padding:22px 18px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px;box-shadow:0 4px 16px rgba(25,50,75,.05)}h2{margin:0 0 6px;font-size:22px}.sub{color:var(--muted);margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.field label{display:block;font-weight:600;font-size:13px;margin-bottom:6px}.field input,.field select{width:100%;padding:11px 12px;border:1px solid #cbd7e1;border-radius:9px;font-size:15px;background:#fff;color:var(--ink)}.field small{display:block;color:var(--muted);margin-top:4px}.btn{border:0;border-radius:10px;padding:12px 18px;font-weight:700;font-size:15px;cursor:pointer}.primary{background:#17324d;color:#fff}.secondary{background:#eaf1f6;color:#17324d}.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.notice{padding:12px 14px;border-radius:10px;background:#eef6fb;color:#31566f;font-size:14px}.error{background:#fff1f1;color:#8d3030}.hidden{display:none}.pathways{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.path{border:2px solid var(--line);border-radius:15px;padding:18px;cursor:pointer;background:#fff}.path:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.07)}.path.selected{border-color:var(--ink)} .path.active{border-color:#17324d;box-shadow:0 0 0 4px rgba(23,50,77,.10)}.path h3{margin:0 0 4px}.minimum h3{color:var(--green)}.balanced h3{color:var(--blue)}.legacy h3{color:var(--purple)}.tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf2f5;font-size:12px;font-weight:700;margin:6px 0 12px}.metric{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:8px 0;font-size:14px}.metric strong{font-size:15px}.feasible{color:var(--green);font-weight:800}.notfeasible{color:var(--danger);font-weight:800}.two{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stat{background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:13px}.stat span{display:block;color:var(--muted);font-size:12px}.stat strong{display:block;margin-top:4px;font-size:20px}.sliderrow{display:grid;grid-template-columns:1fr 120px;gap:12px;align-items:center}.sliderrow input[type=range]{width:100%}.yearbox{max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:10px}.yearbox table{width:100%;border-collapse:collapse;font-size:12px}.yearbox th,.yearbox td{padding:8px;border-bottom:1px solid var(--line);text-align:right}.yearbox th:first-child,.yearbox td:first-child{text-align:left}.yearbox th{position:sticky;top:0;background:#f4f8fb}.chart{width:100%;height:280px;border:1px solid var(--line);border-radius:12px;background:#fff}.footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}.pill{font-size:12px;padding:5px 9px;border-radius:999px;background:#edf5ef;color:#2e6e49}.request{background:linear-gradient(135deg,#f8fbfd,#eef5fa)}.readiness-scale{position:relative;margin:18px 4px 8px}.scale-bar{height:18px;border-radius:999px;background:linear-gradient(90deg,#f1d2d2,#f1ead2,#d9eadf);position:relative}.scale-marker{position:absolute;top:-7px;width:4px;height:32px;background:#17324d;border-radius:2px;transform:translateX(-2px)}.scale-labels{display:flex;justify-content:space-between;gap:10px;font-size:11px;color:var(--muted);margin-top:8px}.scale-labels span{text-align:center}.scale-labels span:nth-child(2){flex:1}.dimension{padding:10px 0;border-top:1px solid var(--line)}.dimension:first-child{border-top:0}.dimension-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;font-size:14px}.dimension-head small{color:var(--muted)}.dimension-value{text-align:right;font-weight:800;white-space:nowrap}.dimension-bar{height:10px;border-radius:999px;background:#e8eef2;overflow:hidden;margin-top:7px}.dimension-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#d9eadf,#8fbea3,#2e6e49)}.dimension-fill.excluded{background:#cbd5dc}.legacy-note{margin-top:12px;padding:10px 12px;border-radius:9px;background:#f4f7f9;color:var(--muted);font-size:13px}
+header{background:linear-gradient(135deg,#17324d,#2c5d78);color:#fff;padding:30px 20px}header .wrap{max-width:1100px;margin:auto}h1{margin:0 0 6px;font-size:34px;letter-spacing:.2px}header p{margin:0;color:#dcecf7;font-size:16px}.wrap{max-width:1100px;margin:auto;padding:22px 18px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px;box-shadow:0 4px 16px rgba(25,50,75,.05)}h2{margin:0 0 6px;font-size:22px}.sub{color:var(--muted);margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.field label{display:block;font-weight:600;font-size:13px;margin-bottom:6px}.field input,.field select{width:100%;padding:11px 12px;border:1px solid #cbd7e1;border-radius:9px;font-size:15px;background:#fff;color:var(--ink)}.field small{display:block;color:var(--muted);margin-top:4px}.btn{border:0;border-radius:10px;padding:12px 18px;font-weight:700;font-size:15px;cursor:pointer}.primary{background:#17324d;color:#fff}.secondary{background:#eaf1f6;color:#17324d}.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.notice{padding:12px 14px;border-radius:10px;background:#eef6fb;color:#31566f;font-size:14px}.error{background:#fff1f1;color:#8d3030}.hidden{display:none}.pathways{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.path{border:2px solid var(--line);border-radius:15px;padding:18px;cursor:pointer;background:#fff}.path:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.07)}.path.selected{border-color:var(--ink)} .path.active{border-color:#17324d;box-shadow:0 0 0 4px rgba(23,50,77,.10)}.path h3{margin:0 0 4px}.minimum h3{color:var(--green)}.balanced h3{color:var(--blue)}.legacy h3{color:var(--purple)}.tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf2f5;font-size:12px;font-weight:700;margin:6px 0 12px}.metric{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:8px 0;font-size:14px}.metric strong{font-size:15px}.feasible{color:var(--green);font-weight:800}.notfeasible{color:var(--danger);font-weight:800}.neutral{color:var(--muted);font-weight:800}.status-row{display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px solid var(--line);padding:8px 0;font-size:14px}.status-badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf2f5;font-size:12px;font-weight:800}.status-badge.good{background:#edf5ef;color:#2e6e49}.status-badge.warn{background:#fff5df;color:#8a6418}.status-badge.outside{background:#eef2f5;color:#5f7180}.two{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stat{background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:13px}.stat span{display:block;color:var(--muted);font-size:12px}.stat strong{display:block;margin-top:4px;font-size:20px}.sliderrow{display:grid;grid-template-columns:1fr 120px;gap:12px;align-items:center}.sliderrow input[type=range]{width:100%}.yearbox{max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:10px}.yearbox table{width:100%;border-collapse:collapse;font-size:12px}.yearbox th,.yearbox td{padding:8px;border-bottom:1px solid var(--line);text-align:right}.yearbox th:first-child,.yearbox td:first-child{text-align:left}.yearbox th{position:sticky;top:0;background:#f4f8fb}.chart{width:100%;height:280px;border:1px solid var(--line);border-radius:12px;background:#fff}.footer{color:var(--muted);font-size:12px;text-align:center;padding:20px}.pill{font-size:12px;padding:5px 9px;border-radius:999px;background:#edf5ef;color:#2e6e49}.request{background:linear-gradient(135deg,#f8fbfd,#eef5fa)}.readiness-scale{position:relative;margin:18px 4px 8px}.scale-bar{height:18px;border-radius:999px;background:linear-gradient(90deg,#f1d2d2,#f1ead2,#d9eadf);position:relative}.scale-marker{position:absolute;top:-7px;width:4px;height:32px;background:#17324d;border-radius:2px;transform:translateX(-2px)}.scale-labels{display:flex;justify-content:space-between;gap:10px;font-size:11px;color:var(--muted);margin-top:8px}.scale-labels span{text-align:center}.scale-labels span:nth-child(2){flex:1}.dimension{padding:10px 0;border-top:1px solid var(--line)}.dimension:first-child{border-top:0}.dimension-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;font-size:14px}.dimension-head small{color:var(--muted)}.dimension-value{text-align:right;font-weight:800;white-space:nowrap}.dimension-bar{height:10px;border-radius:999px;background:#e8eef2;overflow:hidden;margin-top:7px}.dimension-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#d9eadf,#8fbea3,#2e6e49)}.dimension-fill.excluded{background:#cbd5dc}.legacy-note{margin-top:12px;padding:10px 12px;border-radius:9px;background:#f4f7f9;color:var(--muted);font-size:13px}.readiness-status{border:2px solid var(--line);border-radius:14px;padding:16px;background:#fff}.readiness-status.good{border-color:#8fbea3;background:#f4faf6}.readiness-status.warn{border-color:#d9b77a;background:#fffaf1}.readiness-status.bad{border-color:#d79a9a;background:#fff5f5}.status-title{font-size:22px;font-weight:800;margin-bottom:6px}.profile-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}.profile-item{background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:14px}.profile-item span{display:block;color:var(--muted);font-size:12px}.profile-item strong{display:block;margin-top:5px;font-size:19px}.context-note{margin-top:12px;padding:11px 13px;border-radius:10px;background:#f4f7f9;color:var(--muted);font-size:13px}@media(max-width:800px){.profile-grid{grid-template-columns:1fr}}
 @media(max-width:800px){.grid,.pathways,.two{grid-template-columns:1fr}.stats{grid-template-columns:1fr}h1{font-size:28px}}
 </style>
 </head>
 <body>
+<body>
 <header><div class="wrap"><h1>RETIRО ONLINE</h1><p>Explore your retirement blueprint</p></div></header>
 <main class="wrap">
 <section class="card">
-<h2>Welcome to Retiro</h2><p class="sub"><em>Plan your retirement as early as you start earning.</em> This is truly a wise advice because in retirement planning, time is the most important resource a person can have. Majority of Filipinos are underprepared for retirement, according to a <a href="https://www.philstar.com/business/2025/12/12/2493537/retirement-financial-preparedness-low-among-pinoys-inlife-study">recent readiness study</a>. The findings suggest that Filipinos, particularly the younger generations, should start planning their retirement early and more intentionally, because traditional pensions and savings may fall short against future living and medical expenses.<br>
+<h2>Welcome to Retiro</h2><p class="sub"><em>Plan your retirement as early as you start earning.</em> This is truly a wise advice because in retirement planning, time is the most important resource a person can have. Majority of Filipinos are underprepared for retirement, according to a <a href="https://www.philstar.com/business/2025/12/12/2493537/retirement-financial-preparedness-low-among-pinoys-inlife-study">recent readiness study</a>. The findings suggest that Filipinos should start planning their retirement early and more intentionally, because traditional pensions and savings may fall short against future living and medical expenses.<br>
 <br>
-  However, for many young Filipinos, retirement planning can seem vague and overwhelming. That’s where Retiro comes in as a comprehensive financial planning tool. It allows users to visually explore how retirement age, savings, investment growth, pension, expenses, and financial legacy interact. Importantly, it is not a prediction tool or a personal investment advisor, but a practical decision-making simulator designed to help you plan and prepare for your future.</p>
-<div class="notice">Retiro Online is a lightweight tool for financial planning and learning, and can be used in a more granular retirement preparation. For this prototype, your personal information is processed entirely within your local browser session and is not sent to any external servers.</div>
+  However, for many young Filipino professionals, retirement planning can seem vague and overwhelming. That’s where Retiro comes in as a comprehensive financial planning tool. It allows users to visually explore how retirement age, savings, investment growth, pension, expenses, and financial legacy interact. Importantly, it is not a prediction tool or a personal investment advisor, but a practical decision-making simulator designed to help you plan and prepare for your future.</p>
+<div class="notice">Retiro Online is a compact tool for planning and learning. For this prototype, your personal information is processed entirely within your local browser session and is not sent to any external servers.</div>
 </section>
 <section class="card" id="inputs">
 <h2>1. Build Your Profile</h2><p class="sub">Enter approximate figures. They do not need to be perfect—the goal is to develop a realistic picture.</p>
@@ -37,7 +38,7 @@ header{background:linear-gradient(135deg,#17324d,#2c5d78);color:#fff;padding:30p
 <div class="field"><label>12. Estimated monthly pension at retirement (₱)</label><input id="pension" type="text" inputmode="decimal" min="0" value="30,000"><small>Future value of expected monthly pension.</small></div>
 <div class="field"><label>Other monthly pension (₱)</label><input id="otherPension" type="text" inputmode="decimal" min="0" value="0" readonly></div>
 <div class="field"><label>13. Retirement package</label><select id="package"><option>GSIS 18-month Lump Sum</option><option>GSIS 5-year Lump Sum</option><option>Other Package</option><option>None</option></select></div>
-<div class="field"><label>14. Retirement payouts and other benefits (₱)</label><input id="benefits" type="text" inputmode="decimal" value="700,000"><small>Do not include GSIS lump sum payout</small></div>
+<div class="field"><label>14. Retirement payouts & other benefits (₱)</label><input id="benefits" type="text" inputmode="decimal" value="700,000"><small>Do not include GSIS lump sum payout</small></div>
 <div class="field"><label>15. Pre-retirement annual return</label><input id="preReturn" type="text" inputmode="decimal" data-percent="true" step="0.001" value="6%"><small>Interest rate in pre-retirement investment</small></div>
 <div class="field"><label>16. Post-retirement annual return</label><input id="postReturn" type="text" inputmode="decimal" data-percent="true" step="0.001" value="4%"><small>Interest rate in post-retirement investment.</small></div>
 <div class="field"><label>17. Post-retirement funds to be invested</label><input id="investPct" type="text" inputmode="decimal" data-percent="true" value="50%"><small>This portion is allocated to conservative investment, eg. time deposit. The remaining funds are kept liquid.</small></div>
@@ -46,60 +47,67 @@ header{background:linear-gradient(135deg,#17324d,#2c5d78);color:#fff;padding:30p
 </div>
 <div class="notice" id="pensionHelp" style="margin:16px 0"><span id="pensionHelpText"><strong>Estimating your pension:</strong> If you are an SSS member, you can use the official <a href="https://member.sss.gov.ph/member/pbl/pencalc/views/index.jsp" target="_blank" rel="noopener">My.SSS Pension Calculator</a>, then enter the estimated monthly pension above. For GSIS, use your latest official GSIS estimate/benefit information. Retiro uses the amount you enter; it does not independently calculate your pension.</span></div>
 <hr style="border:0;border-top:1px solid var(--line);margin:22px 0">
-<p><small>For simplicity, Retiro assumes a relatively stable annual expense pattern. Actual household expenses may fluctuate because of major purchases, loans, education, health and other life events.</small></p>
+<p><small>For simplicity, Retiro assumes a relatively stable annual expense pattern. Actual household expenses may fluctuate because of major purchases, debt, education, health, housing and other life events.</small></p>
 <div class="actions" style="margin-top:18px"><button class="btn primary" onclick="calculate()">Build My Retirement Blueprint</button><button class="btn secondary" onclick="loadIllustration()">Reset to Illustration</button></div>
 <div id="msg" class="notice hidden" style="margin-top:14px"></div>
 </section>
 
 <section class="card hidden" id="scenario">
-<h2>2. Your Current Retirement Scenario</h2><p class="sub">Before looking at targets and pathways, see what your current assumptions project at your desired retirement age.</p>
+<h2>3. Your Current Retirement Scenario</h2><p class="sub">Before looking at targets and pathways, see what your current assumptions project at your desired retirement age.</p>
 <div id="scenarioStats" class="stats"></div>
 <div id="scenarioNote" class="notice" style="margin-top:14px"></div>
 </section>
 
 <section class="card hidden" id="readiness">
-<h2>3. Your Financial Readiness</h2><p class="sub">This parameter describes the strength of your current financial retirement plan. This is a planning indicator only, not a prediction, financial advice, or a measure of your overall financial health.</p>
-<div class="two">
-<div>
-<div id="readinessStats" class="stats"></div>
-<div id="readinessDetails" style="margin-top:14px"></div>
+<h2>4. Your Financial Readiness Profile</h2>
+<p class="sub">Retiro does not reduce retirement readiness to a single score. Instead, it first asks the most important question: <strong>Can the projected retirement resources sustain the retirement years you have planned?</strong> Other indicators help explain the result rather than being added together into one number.</p>
+
+<div id="readinessStats"></div>
+<div class="profile-grid" id="readinessDetails" style="margin-top:14px"></div>
+<div class="context-note" id="readinessContext"></div>
+
+<div class="two" style="margin-top:16px">
+<div class="card" style="margin:0;background:#f8fbfd">
+<h3 style="margin-top:0;font-size:19px">How to read your profile</h3>
+<div id="readinessGuide"></div>
 </div>
 <div class="card" style="margin:0;background:#f8fbfd">
-<h3 style="margin-top:0;font-size:20px;text-align: center">Retiro Readiness Scale</h3>
-<div id="readinessGauge"></div>
+<h3 style="margin-top:0;font-size:19px">What the other indicators tell you</h3>
+<div id="readinessDrivers"></div>
 </div>
 </div>
-<div class="notice" style="margin-top:16px">The Retiro Financial Readiness Score is based only on the information and assumptions entered here. Actual inflation, investment returns, pension benefits, expenses, longevity, taxes, healthcare costs, employment and other circumstances may differ and materially change the result.</div>
+
+<div class="notice" style="margin-top:16px">Readiness is presented as a profile rather than a composite score because some indicators describe closely related aspects of the same retirement funding outcome. Corpus adequacy is the primary test. Longevity becomes a diagnostic when funding falls short. When the full planned retirement period is funded, additional resources are better understood as a <strong>funding margin or surplus</strong>, not as “more longevity.” Pension and legacy remain useful contextual indicators.</div>
 </section>
 
 <section class="card hidden" id="results">
-<h2>4. Retiro Optimizer: Set Your Goals</h2><p class="sub">Retiro evaluates a range of retirement ages and contribution levels to search for feasible retirement pathways that can meet your goals within your stated limits. The goals below drive the pathway search.<br>
-</br>
-<small>Click Recalculate button after entering new desired values.</small></p>
+<h2>4. Retirement Optimizer: Set Your Goals</h2><p class="sub">Retiro evaluates a range of retirement ages and contribution levels to search for feasible retirement pathways that can meet your goals within your stated limits. The goals below drive the pathway search.<br>
+<br>
+  <small>Click Recalculate button after entering new desired values.</small></p>
 <div class="grid">
 <div class="field"><label>Desired retirement corpus (₱)</label><input id="targetCorpus" type="text" inputmode="decimal" value="20,000,000"><small>Accumulated funds for retirement</small></div>
 <div class="field"><label>Desired financial legacy (₱)</label><input id="targetLegacy" type="text" inputmode="decimal" value="6,000,000"><small>Remaining assets at end-of-life</small></div>
-<div class="field"><label>Maximum contribution as % of annual savings</label><input id="maxContrib" type="text" inputmode="decimal" data-percent="true" step="0.05" value="80%"><small>Investment ceiling for pre-retirement accumulation.</small></div>
+<div class="field"><label>Maximum contribution as % of annual savings</label><input id="maxContrib" type="text" inputmode="decimal" data-percent="true" step="0.05" value="80%"><small>Investment cap for corpus building.</small></div>
 <div class="actions" style="margin-top:18px"><button class="btn primary" onclick="calculate(false)">Recalculate</button></div>
 </div>
 <br>
-<h2>Your Retiro Options</h2><p class="sub">Retiro searches feasible options within the explored retirement-age range of <strong>60 to 70</strong>. This is an analysis range—not a recommendation to retire later than your preferred age. An option is considered feasible only when the applicable conditions you have set are satisfied.</p>
+<h2>5. Your Retiro Options</h2><p class="sub">Retiro explores retirement ages within the <strong>60 to 70</strong> search range shown below. This is an analysis range—not a recommendation to retire later than your preferred age. <strong>Financial feasibility and search scope are separate:</strong> an age outside this range can still be financially feasible; it is simply not included in the automatic shortlist.</p>
 <div id="pathways" class="pathways"></div>
 </section>
 
 <section class="card hidden" id="explorer">
-<h2>5. Explore a Pathway</h2><p class="sub">Select a pathway, then change retirement age to explore how the blueprint changes.</p>
+<h2>6. Explore a Pathway</h2><p class="sub">Select a pathway, then change retirement age to explore how the blueprint changes.</p>
 <div id="selectedPathBanner" class="notice" style="font-weight:800;margin-bottom:14px"></div>
-<div class="sliderrow"><div><label style="font-weight:700">Retirement age</label><input id="ageSlider" type="range" min="50" max="70" value="60" oninput="refreshExplorer()"></div><div><input id="ageBox" type="number" min="50" max="70" value="60" oninput="syncAgeBox()"></div></div>
+<div class="sliderrow"><div><label style="font-weight:700">Retirement age</label><input id="ageSlider" type="range" min="50" max="80" value="60" oninput="refreshExplorer()"></div><div><input id="ageBox" type="number" min="50" max="80" value="60" oninput="syncAgeBox()"></div></div>
 <div class="actions" style="margin:14px 0"><button id="pathBtnMinimum" class="btn secondary" onclick="selectPath('Minimum')">🟢 Minimum</button><button id="pathBtnBalanced" class="btn secondary" onclick="selectPath('Balanced')">🔵 Balanced</button><button id="pathBtnLegacy" class="btn secondary" onclick="selectPath('Legacy')">🟣 Legacy Builder</button></div>
 <div id="detailStats" class="stats" style="margin-bottom:16px"></div>
 <div class="two"><div><svg id="chart" class="chart" viewBox="0 0 700 280" preserveAspectRatio="none"></svg></div><div><h3 style="margin-top:0">Year-by-year retirement journey</h3><div id="table" class="yearbox"></div></div></div>
-<div class="notice" style="margin-top:16px"><strong>Insights:</strong> Generally, earlier retirement requires higher annual contribution, and therefore, greater financial preparation. Conversely, delaying retirement can provide more time for accumulation and may reduce the number of years your assets need to support you.
+<div class="notice" style="margin-top:16px"><strong>How to interpret this exploration:</strong> <strong>Financial feasibility</strong> asks whether this retirement age and contribution level satisfy the pathway's financial conditions. <strong>Search scope</strong> only tells you whether that age is inside Retiro's automatic 60–70 shortlist. An option can therefore be financially feasible while being outside the search range.<br><br><strong>Insights:</strong> Generally, earlier retirement requires higher annual contribution, and therefore, greater financial preparation. Conversely, delaying retirement can provide more time for accumulation and may reduce the number of years your assets need to support you.
 The Retiro Optimizer helps make these relationships more understandable and visible.</div>
 </section>
 
 <section class="card request">
-<h2>6. Your Retiro Personal Workbook</h2><p class="sub">You just have explored your retirement financial outlook and possible Retiro pathways. This online demonstration represents only the surface of Retiro's full capabilities. If you would like to deepen your retirement planning in a more personal way, get a copy of the full-featured Retiro Excel, bundled with other useful financial planning tools and resources, by completing the short registration form.</p>
+<h2>7. Your Retiro Personal Workbook</h2><p class="sub">You just have explored your retirement financial outlook and possible Retiro pathways. This online demonstration represents only the surface of Retiro's full capabilities. If you would like to deepen your retirement planning in a more personal way, get a copy of the full-featured Retiro Excel, bundled with other useful financial planning tools and resources, by completing the short registration form.</p>
 <a href="https://forms.gle/gujnDkFUJE5dSVsK7" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Register Now & Get Your Retiro Excel</a>
 </section></main>
 <div class="footer"><strong>About This Tool</strong><br>
@@ -191,7 +199,10 @@ function projectYears(p, age, annualContribution, years){
           depletionAge,totalExpenses,totalPension,totalInterest};
 }
 
-/* Candidate search mirrors the current Excel Retiro Optimizer formulas. */
+/* Candidate search mirrors the current Excel Retiro Optimizer formulas.
+   v1.3 separates FINANCIAL FEASIBILITY from SEARCH SCOPE.
+   An age outside the automatic search range is not financially infeasible;
+   it is simply outside the range used for the shortlist. */
 function candidate(p,age,multiplier){
   let years=Math.max(0,age-p.age), yearsRet=Math.max(0,p.life-age);
   let packageLS=lumpSum(p), benefit=p.benefits, denom;
@@ -207,39 +218,62 @@ function candidate(p,age,multiplier){
   else denom=(Math.pow(1+p.preReturn,years)-Math.pow(1+p.growth,years))/(p.preReturn-p.growth);
   denom*=p.timing==='BOY'?1+p.preReturn:1;
   let futureSeed=p.seed*Math.pow(1+p.preReturn,years);
-  // This follows the current Excel Optimizer formula, including its treatment of other retirement benefits.
   let minAnnual=Math.max(0,(required-packageLS+benefit-futureSeed)/Math.max(1e-12,denom));
   let used=minAnnual*multiplier;
   let proj=optimizerProjection(p,age,used);
   let annualSavings=Math.max(0,p.savings);
-  let feasible=proj.corpus>=p.targetCorpus && proj.legacy>=p.targetLegacy &&
-               used<=annualSavings*p.maxContrib && age>=p.earliest && age<=p.latest;
+  const contributionAffordable=used<=annualSavings*p.maxContrib;
+  const corpusSatisfied=proj.corpus>=p.targetCorpus;
+  const legacySatisfied=proj.legacy>=p.targetLegacy;
+  const financialFeasible=corpusSatisfied && legacySatisfied && contributionAffordable;
+  const inSearchRange=age>=p.earliest && age<=p.latest;
   let score=used/Math.max(1,p.expenses)+0.2*(age-p.age);
   return {path:multiplier===1?'Minimum':multiplier===1.2?'Balanced':'Legacy',age,years,yearsRet,minAnnual,used,
           corpus:proj.corpus,legacy:proj.legacy,targetCorpus:p.targetCorpus,targetLegacy:p.targetLegacy,
-          feasible,score,proj,annualSavings,required,pvExpenses};
+          financialFeasible,inSearchRange,contributionAffordable,corpusSatisfied,legacySatisfied,
+          feasible:financialFeasible && inSearchRange,score,proj,annualSavings,required,pvExpenses};
 }
 
-/* Readiness mirrors the Readiness Metrics worksheet exactly. */
+/* v1.3 Readiness Profile
+   Readiness is intentionally not collapsed into a single composite score.
+   Core test: can projected retirement resources sustain the full planned retirement period?
+   Longevity is diagnostic when funding falls short; when fully funded, surplus/margin is shown instead.
+   Pension and legacy remain contextual indicators. */
 function readiness(p,proj){
-  const totalExp=proj.totalExpenses, totalPension=proj.totalPension, interest=proj.totalInterest;
-  const netFundingNeed=Math.max(0,totalExp-totalPension);
-  const corpusRatio=netFundingNeed>0?proj.corpus/netFundingNeed:1;
-  const firstYearExpense=proj.rows.length?proj.rows[0].expense:0;
-  const annualPrimaryPension=proj.rows.length?proj.rows[0].pension:0;
-  const pensionRatio=firstYearExpense>0?annualPrimaryPension/firstYearExpense:1;
   const retirementYears=proj.rows.length;
   const fundedRows=proj.rows.filter(r=>r.assets>0).length;
-  const longevityRatio=retirementYears?fundedRows/retirementYears:1;
-  const retirementCorpus=proj.corpus;
-  const legacyRatio=retirementCorpus>0?proj.legacy/retirementCorpus:0;
-  let weights=p.targetLegacy>0?[.40,.25,.20,.15]:[.40/0.85,.25/0.85,.20/0.85,0];
-  const ratios=[Math.min(1,Math.max(0,corpusRatio)),Math.min(1,Math.max(0,pensionRatio)),
-                Math.min(1,Math.max(0,longevityRatio)),Math.min(1,Math.max(0,legacyRatio))];
-  const points=ratios.map((r,i)=>r*weights[i]*100);
-  const score=Math.round(points.reduce((a,b)=>a+b,0));
-  let level=score>=85?'Well Prepared':score>=70?'On Track':score>=50?'Needs Attention':score>=30?'Needs Improvement':'At Risk';
-  return {ratios,weights,points,score,level,totalExp,totalPension,interest,netFundingNeed,firstYearExpense,annualPrimaryPension};
+  const fullyFunded=fundedRows===retirementYears && retirementYears>0;
+  const firstDepleted=proj.rows.find(r=>r.assets<=0);
+  const fundedYears=fullyFunded?retirementYears:Math.max(0,fundedRows);
+  const firstYearExpense=proj.rows.length?proj.rows[0].expense:0;
+  const annualPrimaryPension=proj.rows.length?proj.rows[0].pension:0;
+  const pensionRatio=firstYearExpense>0?annualPrimaryPension/firstYearExpense:0;
+  const terminalAssets=proj.legacy;
+  const netFundingNeed=Math.max(0,proj.totalExpenses-proj.totalPension);
+  const corpusNeedRatio=netFundingNeed>0?proj.corpus/netFundingNeed:1;
+  const endMargin=fullyFunded?Math.max(0,terminalAssets):0;
+  const fundingShortfall=!fullyFunded && firstDepleted ? Math.max(0,firstDepleted.assets===0 ? 0 : 0) : 0;
+
+  let statusTitle, statusClass, statusDetail;
+  if(fullyFunded){
+    statusTitle='FULLY FUNDED FOR THE PLANNED RETIREMENT PERIOD';
+    statusClass='good';
+    statusDetail=`Your projected retirement resources remain positive through age ${proj.rows[proj.rows.length-1].age}. The key question now is not whether the fund lasts, but how much cushion remains at the end of the projection.`;
+  }else{
+    statusTitle='FUNDING SHORTFALL WITHIN THE PLANNED RETIREMENT PERIOD';
+    statusClass='warn';
+    const depletionAge=firstDepleted?firstDepleted.age:null;
+    statusDetail=depletionAge
+      ? `Under the current assumptions, projected retirement assets reach zero around age ${depletionAge}. Longevity is therefore a useful diagnostic: the plan currently funds about ${fundedYears} of ${retirementYears} projected retirement years.`
+      : `Under the current assumptions, the plan does not fully fund the projected retirement period.`;
+  }
+
+  return {
+    retirementYears,fundedYears,fullyFunded,firstDepleted,statusTitle,statusClass,statusDetail,
+    firstYearExpense,annualPrimaryPension,pensionRatio,terminalAssets,netFundingNeed,
+    corpusNeedRatio,endMargin,corpus:proj.corpus,totalExpenses:proj.totalExpenses,
+    totalPension:proj.totalPension,interest:proj.totalInterest,depletionAge:proj.depletionAge
+  };
 }
 
 function calculate(shouldScroll=true){
@@ -263,77 +297,99 @@ function calculate(shouldScroll=true){
   const rd=readiness(base,currentProj); renderReadiness(rd,currentProj);
 
   results=[];
-  for(let age=60;age<=70;age++) for(const m of [1,1.2,1.4]) results.push(candidate(base,age,m));
+  for(let age=50;age<=80;age++) for(const m of [1,1.2,1.4]) results.push(candidate(base,age,m));
   let best={Minimum:null,Balanced:null,Legacy:null};
+  let outside={Minimum:null,Balanced:null,Legacy:null};
   ['Minimum','Balanced','Legacy'].forEach(path=>{
-    let xs=results.filter(x=>x.path===path&&x.feasible).sort((a,b)=>a.score-b.score);
-    best[path]=xs[0]||null;
+    const financiallyFeasible=results.filter(x=>x.path===path&&x.financialFeasible).sort((a,b)=>a.score-b.score);
+    const inRange=financiallyFeasible.filter(x=>x.inSearchRange);
+    best[path]=inRange[0]||null;
+    outside[path]=financiallyFeasible.find(x=>!x.inSearchRange)||null;
   });
-  document.getElementById('pathways').innerHTML=['Minimum','Balanced','Legacy'].map(path=>card(best[path],path)).join('');
+  document.getElementById('pathways').innerHTML=['Minimum','Balanced','Legacy'].map(path=>card(best[path],path,outside[path])).join('');
   document.getElementById('results').classList.remove('hidden');
   document.getElementById('explorer').classList.remove('hidden');
   selectedAge=best.Minimum?best.Minimum.age:Math.min(70,Math.max(60,base.retAge));
   selectedPath=best.Minimum?'Minimum':'Balanced';
   document.getElementById('ageSlider').value=selectedAge; document.getElementById('ageBox').value=selectedAge;
   refreshExplorer();
-  showMsg('When your blueprint is calculated, review your current scenario and readiness first. You can always change your assumptions to create new scenarios, then explore the feasible pathways with Retiro Optimizer.','');
+  showMsg('Review your current scenario and readiness first. In the pathway section, distinguish financial feasibility from the retirement-age search range used for the automatic shortlist.','');
   if(shouldScroll) document.getElementById('scenario').scrollIntoView({behavior:'smooth'});
 }
 
 function renderScenario(proj){
   document.getElementById('scenarioStats').innerHTML=
-    `<div class="stat"><span>Projected retirement fund (pre-retirement corpus)</span><strong>${money(proj.corpus)}</strong></div>
-     <div class="stat"><span>Projected retirement expenses until terminal age</span><strong>${money(proj.totalExpenses)}</strong></div>
-     <div class="stat"><span>Total pension income until terminal age</span><strong>${money(proj.totalPension)}</strong></div>
-     <div class="stat"><span>Projected financial legacy</span><strong>${money(proj.legacy)}</strong></div>
-     <div class="stat"><span>Age at fund depletion</span><strong>${proj.depletionAge===null?'Not depleted':proj.depletionAge}</strong></div>`;
+    `<div class="stat"><span>Projected retirement fund/corpus</span><strong>${money(proj.corpus)}</strong></div>
+     <div class="stat"><span>Total retirement expenses</span><strong>${money(proj.totalExpenses)}</strong></div>
+     <div class="stat"><span>Total pension income</span><strong>${money(proj.totalPension)}</strong></div>
+     <div class="stat"><span>Financial legacy</span><strong>${money(proj.legacy)}</strong></div>
+     <div class="stat"><span>Fund is projected to be depleted at age</span><strong>${proj.depletionAge===null?'Not depleted':proj.depletionAge}</strong></div>`;
   const gap=Math.max(0,proj.totalExpenses-proj.preCorpus-proj.totalInterest-proj.totalPension);
   document.getElementById('scenarioNote').innerHTML=
-    `<strong>What this means:</strong> At retirement age ${base.retAge}, current assumptions produce ${money(proj.corpus)} in retirement resources, and total pension income of ${money(proj.totalPension)} for the entire projected lifespan. Under the assumed retirement lifestyle, with a projected cost of ${money(proj.totalExpenses)},   
-     the remaining assets at end-of-life is ${money(proj.legacy)}. ${proj.depletionAge===null?'The retirement resources are not depleted within the projected lifespan.':`The retirement funds, including interest income, are expected to hit zero balance at age ${proj.depletionAge}.`}`;
+    `<strong>What this means:</strong> At retirement age ${base.retAge}, your current assumptions produce ${money(proj.corpus)} in retirement resources and total pension income amounting to ${money(proj.totalPension)}. Under the assumed retirement lifestyle with a projected cost of ${money(proj.totalExpenses)},   
+     the projected end-of-life balance is ${money(proj.legacy)}. ${proj.depletionAge===null?'The retirement resources are not depleted within the projected lifespan.':`The retirement resources are projected to be depleted at age ${proj.depletionAge}.`}`;
   document.getElementById('scenario').classList.remove('hidden');
 }
 
 function renderReadiness(rd,proj){
-  const labels=['Corpus & Investment Adequacy','Pension Sufficiency','Longevity Security','Financial Legacy'];
-  const icons=['💰','🏦','⏳','🏠'];
-  document.getElementById('readinessStats').innerHTML=
-    `<div class="stat"><span>Financial Readiness Score</span><strong>${rd.score}/100</strong></div>
-     <div class="stat"><span>Readiness level</span><strong>${rd.level}</strong></div>`;
-  document.getElementById('readinessDetails').innerHTML=labels.map((l,i)=>{
-    const excluded=(i===3 && rd.weights[i]===0);
-    const ratio=excluded?0:Math.round(rd.ratios[i]*100);
-    return `<div class="dimension">
-      <div class="dimension-head">
-        <span>${icons[i]} ${l}<br><small>Weight: ${(rd.weights[i]*100).toFixed(1)}%</small></span>
-        <span class="dimension-value">${excluded?'Excluded':`${Math.round(rd.points[i])}/${Math.round(rd.weights[i]*100)} · ${ratio}%`}</span>
-      </div>
-      <div class="dimension-bar"><div class="dimension-fill${excluded?' excluded':''}" style="width:${ratio}%"></div></div>
+  const statusHtml =
+    `<div class="readiness-status ${rd.statusClass}">
+      <div class="status-title">${rd.statusTitle}</div>
+      <div style="font-size:14px;line-height:1.5">${rd.statusDetail}</div>
     </div>`;
-  }).join('') + (rd.weights[3]===0 ? '<div class="legacy-note">Target legacy is set to ₱0, so this dimension is excluded and its weight is redistributed across the other three dimensions.</div>' : '');
-  document.getElementById('readinessGauge').innerHTML=
-    `<div style="font-size:42px;font-weight:800;text-align:center">${rd.score}<span style="font-size:18px">/100</span></div>
-    <p style="text-align:center;font-weight:800;margin:8px 0">${rd.level}</p>
-     <div class="readiness-scale"><div class="scale-bar"><div class="scale-marker" style="left:${Math.min(100,Math.max(0,rd.score))}%"></div></div>
-       <div class="scale-labels"><span><strong><30</strong> At Risk</span><span><strong>>=30</strong>   Needs Improvement</span><span><strong>>=50</strong> Needs Attention</span><span><strong>>=70</strong> On Track</span><span><strong>>=85</strong>   Well Prepared</span></div></div>
-     <h3 style="margin-top:0;font-size:18px;text-align: center">Main Drivers</h3>
-       <div class="metric"><span>Retirement expenses</span><strong>${money(rd.totalExp)}</strong></div>
-     <div class="metric"><span>Pension received</span><strong>${money(rd.totalPension)}</strong></div>
-     <div class="metric"><span>Investment earnings</span><strong>${money(rd.interest)}</strong></div>`;
+  document.getElementById('readinessStats').innerHTML=statusHtml;
+
+  const items = rd.fullyFunded ? [
+    ['Retirement funding status','FULLY FUNDED'],
+    ['Planned retirement years funded',`${rd.fundedYears} of ${rd.retirementYears}`],
+    ['Projected end-of-life assets',money(rd.terminalAssets)],
+    ['Funding margin at end of projection',money(rd.endMargin)]
+  ] : [
+    ['Retirement funding status','SHORTFALL'],
+    ['Planned retirement years funded',`${rd.fundedYears} of ${rd.retirementYears}`],
+    ['Projected depletion age',rd.depletionAge===null?'Not determined':rd.depletionAge],
+    ['Projected end-of-life assets',money(rd.terminalAssets)]
+  ];
+
+  document.getElementById('readinessDetails').innerHTML=items.map(x=>
+    `<div class="profile-item"><span>${x[0]}</span><strong>${x[1]}</strong></div>`
+  ).join('');
+
+  document.getElementById('readinessContext').innerHTML =
+    rd.fullyFunded
+      ? `<strong>Core interpretation:</strong> Your retirement resources are projected to cover the entire planned retirement period. The remaining end-of-life assets are shown as your <strong>funding margin</strong>. A larger margin does not mean “more longevity”; it means greater financial cushion under the assumptions used.`
+      : `<strong>Core interpretation:</strong> Your current plan does not fully fund the planned retirement period. The ${rd.fundedYears}-of-${rd.retirementYears}-year result is more informative than a single score because it shows where the funding problem occurs and how much of the planned period is currently supported.`;
+
+  document.getElementById('readinessGuide').innerHTML =
+    rd.fullyFunded
+      ? `<div class="metric"><span>Primary question</span><strong>How much cushion do I have?</strong></div>
+         <div class="metric"><span>Next useful step</span><strong>Review margin and stress-test assumptions</strong></div>`
+      : `<div class="metric"><span>Primary question</span><strong>How long will the fund last?</strong></div>
+         <div class="metric"><span>Next useful step</span><strong>Explore contribution, retirement-age, expense or return changes</strong></div>`;
+
+  document.getElementById('readinessDrivers').innerHTML =
+    `<div class="metric"><span>First-year pension coverage</span><strong>${pct(rd.pensionRatio)}</strong></div>
+     <div class="metric"><span>Total pension received</span><strong>${money(rd.totalPension)}</strong></div>
+     <div class="metric"><span>Total retirement expenses</span><strong>${money(rd.totalExpenses)}</strong></div>
+     <div class="metric"><span>Investment earnings</span><strong>${money(rd.interest)}</strong></div>
+     <div class="metric"><span>Projected financial legacy</span><strong>${money(rd.terminalAssets)}</strong></div>`;
+
   document.getElementById('readiness').classList.remove('hidden');
 }
 
-function card(x,path){
+function card(x,path,outside){
   let cls=path.toLowerCase(),icon=path==='Minimum'?'🟢':path==='Balanced'?'🔵':'🟣';
   return `<div class="path ${cls}" onclick="selectPath('${path}')">
     <h3>${icon} ${path==='Legacy'?'Legacy Builder':path}</h3>
-    <div class="tag">${x?'Best feasible option':'No feasible option in current bounds'}</div>
+    <div class="tag">${x?'Best financially feasible option within 60–70':'No financially feasible option within 60–70'}</div>
     ${x?`<div class="metric"><span>Retirement age</span><strong>${x.age}</strong></div>
       <div class="metric"><span>Annual contribution</span><strong>${money(x.used)}</strong></div>
       <div class="metric"><span>Retirement corpus</span><strong>${money(x.corpus)}</strong></div>
       <div class="metric"><span>Projected legacy</span><strong>${money(x.legacy)}</strong></div>
-      <div class="metric"><span>Status</span><strong class="${x.feasible?'feasible':'notfeasible'}">${x.feasible?'FEASIBLE':'NOT FEASIBLE'}</strong></div>`
-      :`<div class="notice error">No candidate currently satisfies corpus, legacy, contribution ceiling and retirement-age constraints.</div>`}
+      <div class="status-row"><span>Financial feasibility</span><span class="status-badge good">FEASIBLE</span></div>
+      <div class="status-row"><span>Search scope</span><span class="status-badge good">Within 60–70</span></div>`
+      :outside?`<div class="notice">No financially feasible option was found within the 60–70 automatic search range. A financially feasible option was found at age <strong>${outside.age}</strong>, but it is outside the current search scope.</div>`
+      :`<div class="notice error">No financially feasible option was found in the tested age range of 50–80 under this pathway.</div>`}
   </div>`;
 }
 
@@ -356,15 +412,18 @@ function refreshExplorer(){
     b.style.boxShadow=p===selectedPath?'0 0 0 3px rgba(23,50,77,.12)':'none';
     b.style.fontWeight=p===selectedPath?'800':'700';
   });
+  const financialStatus=x.financialFeasible?'FEASIBLE':'NOT FINANCIALLY FEASIBLE';
+  const scopeStatus=x.inSearchRange?'WITHIN SEARCH RANGE':'OUTSIDE SEARCH RANGE';
   document.getElementById('detailStats').innerHTML=
     `<div class="stat"><span>Pathway</span><strong>${selectedPath==='Legacy'?'Legacy Builder':selectedPath}</strong></div>
      <div class="stat"><span>Annual contribution</span><strong>${money(x.used)}</strong></div>
      <div class="stat"><span>Retirement corpus</span><strong>${money(x.corpus)}</strong></div>
      <div class="stat"><span>Projected legacy</span><strong>${money(x.legacy)}</strong></div>
-     <div class="stat"><span>Feasibility</span><strong class="${x.feasible?'feasible':'notfeasible'}">${x.feasible?'FEASIBLE':'NOT FEASIBLE'}</strong></div>`;
+     <div class="stat"><span>Financial feasibility</span><strong class="${x.financialFeasible?'feasible':'notfeasible'}">${financialStatus}</strong></div>
+     <div class="stat"><span>Search scope</span><strong class="${x.inSearchRange?'feasible':'neutral'}">${scopeStatus}</strong></div>`;
   renderChart(x.proj.rows);renderTable(x.proj.rows);
 }
-function syncAgeBox(){let v=Math.min(70,Math.max(50,Number(document.getElementById('ageBox').value)||60));document.getElementById('ageSlider').value=v;refreshExplorer()}
+function syncAgeBox(){let v=Math.min(80,Math.max(50,Number(document.getElementById('ageBox').value)||60));document.getElementById('ageSlider').value=v;refreshExplorer()}
 function renderTable(rows){
   document.getElementById('table').innerHTML='<table><thead><tr><th>Age</th><th>Expenses</th><th>Pension</th><th>Interest</th><th>Invested</th><th>Liquid</th><th>Total assets</th></tr></thead><tbody>'+
   rows.map(r=>`<tr><td>${r.age}</td><td>${money(r.expense)}</td><td>${money(r.pension)}</td><td>${money(r.interest)}</td><td>${money(r.invested)}</td><td>${money(r.liquid)}</td><td>${money(r.assets)}</td></tr>`).join('')+'</tbody></table>';
